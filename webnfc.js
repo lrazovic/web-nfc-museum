@@ -14,6 +14,6 @@ function write(event) {
 }
 
 var buttons = document.getElementsByClassName("write");
-for (var i = 0; i < items.length; i++) {
-  items[i].addEventListener("click", write);
+for (var i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener("click", write);
 }

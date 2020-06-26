@@ -2,7 +2,7 @@ const writer = new NDEFWriter();
 
 function write(event) {
   let name = event.srcElement.name;
-  console.log(name)
+  console.log(name);
   writer
     .write(name)
     .then(() => {
@@ -13,4 +13,4 @@ function write(event) {
     });
 }
 
-document.getElementById("write").addEventListener("click", write, false);
+document.getElementsByClassName("write").addEventListener("click", write);

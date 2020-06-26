@@ -13,4 +13,7 @@ function write(event) {
     });
 }
 
-document.getElementsByClassName("write").addEventListener("click", write);
+var buttons = document.getElementsByClassName("write");
+for (var i = 0; i < items.length; i++) {
+  items[i].addEventListener("click", write);
+}

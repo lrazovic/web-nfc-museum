@@ -6,7 +6,7 @@ function write(event) {
   writer
     .write(name)
     .then(() => {
-      console.log("Message written.");
+      console.log(`Message ${name} written.`);
     })
     .catch((error) => {
       console.log(`Write failed :-( try again: ${error}.`);

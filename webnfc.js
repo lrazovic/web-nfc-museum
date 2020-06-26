@@ -1,6 +1,7 @@
 const writer = new NDEFWriter();
 
 function write(event) {
+  textField.innerHTML = "";
   let name = event.srcElement.name;
   writer
     .write(name)

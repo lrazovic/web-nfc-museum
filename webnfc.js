@@ -1,9 +1,9 @@
 const writer = new NDEFWriter();
 
 function write(event) {
-  console.log(event);
+  let name = event.srcElement.name;
   writer
-    .write(event.name)
+    .write(name)
     .then(() => {
       console.log("Message written.");
     })
@@ -12,6 +12,4 @@ function write(event) {
     });
 }
 
-document
-  .getElementById("write")
-  .addEventListener("click", write, false);
+document.getElementById("write").addEventListener("click", write, false);

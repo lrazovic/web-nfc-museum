@@ -16,3 +16,6 @@ html {
   padding: 16px;
   margin: 16px;
 }
+#message {
+  color: green;
+}

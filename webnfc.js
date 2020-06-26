@@ -1,7 +1,9 @@
-if ("NDEFWriter" in window) {
-  const writer = new NDEFWriter();
+const writer = new NDEFWriter();
+
+function write(name) {
+  console.log(name)
   writer
-    .write("Hello World")
+    .write(name)
     .then(() => {
       console.log("Message written.");
     })
@@ -9,3 +11,5 @@ if ("NDEFWriter" in window) {
       console.log(`Write failed :-( try again: ${error}.`);
     });
 }
+
+document.getElementById("write").addEventListener("click", write(this.name), false);

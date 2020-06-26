@@ -2,6 +2,7 @@ const writer = new NDEFWriter();
 
 function write(event) {
   let name = event.srcElement.name;
+  console.log(name)
   writer
     .write(name)
     .then(() => {

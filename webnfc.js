@@ -21,6 +21,6 @@ function write(event) {
 
 const buttons = document.querySelectorAll("write");
 const textField = document.getElementById("message");
-[].forEach((button) => {
+buttons.forEach((button) => {
   button.addEventListener("click", write);
 });

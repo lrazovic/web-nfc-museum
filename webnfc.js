@@ -21,6 +21,6 @@ async function write(event) {
 
 var buttons = document.getElementsByClassName("write");
 var textField = document.getElementById("message");
-for (var i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener("click", write);
-}
+buttons.forEach((button) => {
+  button.addEventListener("click", write);
+});

@@ -1,9 +1,9 @@
 const writer = new NDEFWriter();
 
-function write(event) {
-  textField.innerHTML = "";
+async function write(event) {
+  textField.innerHTML = "Move your smartphone closer to the receiver";
   let name = event.srcElement.name;
-  writer
+  await writer
     .write(name)
     .then(() => {
       console.log(`Message ${name} written.`);

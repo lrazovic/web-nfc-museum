@@ -19,8 +19,8 @@ function write(event) {
   }
 }
 
-var buttons = document.getElementsByClassName("write");
-var textField = document.getElementById("message");
-buttons.forEach((button) => {
+const buttons = document.querySelectorAll("write");
+const textField = document.getElementById("message");
+[].forEach((button) => {
   button.addEventListener("click", write);
 });

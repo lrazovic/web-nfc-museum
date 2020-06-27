@@ -5,7 +5,6 @@ async function write(event) {
     textField.style.color = "green";
     textField.innerHTML = "Move your smartphone closer to the receiver";
     await writer.write(name).then(() => {
-      console.log(`Message ${name} written.`);
       textField.innerHTML = "Message sent successfully";
     });
   } catch (error) {

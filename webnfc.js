@@ -1,5 +1,6 @@
 async function write(event) {
   let name = event.srcElement.name;
+  console.log(name);
   try {
     const writer = new NDEFWriter();
     textField.style.color = "green";

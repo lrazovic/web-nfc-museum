@@ -32,8 +32,8 @@ html {
 }
 
 .containerCard {
-  width: 320px;
-  max-width: 100%;
+  width: 250px;
+  max-width: 80%;
 }
 button {
   background: #fff;

@@ -1,0 +1,12 @@
+{
+    "name": "NFC Museum",
+    "short_name": "Museum",
+    "theme_color": "#fa7268",
+    "background_color": "#f8fcff",
+    "display": "browser",
+    "scope": "/",
+    "start_url": "/",
+    "icons": null,
+    "splash_pages": null
+  }
+  

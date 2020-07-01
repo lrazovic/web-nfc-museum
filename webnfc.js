@@ -17,5 +17,5 @@ async function write(event) {
 const buttons = document.querySelectorAll("body > div > button");
 const textField = document.getElementById("message");
 buttons.forEach((button) => {
-  button.addEventListener("click", write);
+  button.addEventListener("click", write, false);
 });

@@ -4,8 +4,8 @@
   "theme_color": "#fa7268",
   "background_color": "#f8fcff",
   "display": "standalone",
-  "scope": "/",
-  "start_url": "/",
+  "scope": "/web-nfc-museum/",
+  "start_url": "/web-nfc-museum/",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",

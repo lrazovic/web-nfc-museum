@@ -1,4 +1,4 @@
-# Web NGC Example
+# Web NFC Example
 
 ## Context
 
